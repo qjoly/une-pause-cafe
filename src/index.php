@@ -93,7 +93,7 @@
     </form>
     <footer>
         <p>Prenez une pause-café en lisant un article de la catégorie de votre choix !</p>
-        <p style="padding-top: 2px;">Merci au <a href="https://www.journalduhacker.net/">Journal Du Hacker</a> de mettre à disposition ces liens !</p>
+        <p style="padding-top: 2px;">Merci au <a href="https://www.journalduhacker.net/">Journal du hacker</a> de mettre à disposition ces liens !</p>
 
     </footer>
 EOT;
