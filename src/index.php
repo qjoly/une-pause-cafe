@@ -85,7 +85,9 @@
         </div>
     </form>
     <footer>
-        <p>Prenez une pause-café en lisant un article de la catégorie de votre choix</p>
+        <p>Prenez une pause-café en lisant un article de la catégorie de votre choix !</p>
+        <p style="padding-top: 2px;">Merci au <a href="https://www.journalduhacker.net/">Journal Du Hackeur</a> de mettre à disposition ces liens !</p>
+
     </footer>
 EOT;
                 }
