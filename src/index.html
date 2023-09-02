@@ -24,7 +24,7 @@
             <img src="img/logo.png" alt="Logo">
         </div>
     </div>
-    <form id="radioForm">
+    <form id="radioForm" action="get_article.php" method="post">
         <div class="center-radio-group">
             <label>
                 <input type="radio" name="category" value="Linux"> Linux
@@ -35,13 +35,16 @@
             <label>
                 <input type="radio" name="category" value="Auto-Hébergement"> Auto-Hébergement
             </label>
+            <label>
+                <input type="radio" name="category" value="surprise"> Kawa Surprise
+            </label>
         </div>
         <div class="container">
         <button id="submitButton" type="submit">Prendre une pause café</button>
         </div>
     </form>
     <footer>
-        <p>&copy; 2023 Your Company Name</p>
+        <p>Prenez une pause-café en lisant un article de la catégorie de votre choix</p>
     </footer>
     <script src="script.js"></script>
 
