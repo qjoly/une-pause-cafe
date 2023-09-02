@@ -4,7 +4,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: ghcr.io/qjoly/une-pause-cafe:latest
     ports:
-      - 80:80
+      - 8080:80
     volumes:
       - ./src:/var/www/html
