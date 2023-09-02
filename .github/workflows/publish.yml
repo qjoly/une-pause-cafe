@@ -2,8 +2,6 @@ name: Publish Program
 
 on:
   push:
-    branches:
-      - main
 
 jobs:
   publish:
