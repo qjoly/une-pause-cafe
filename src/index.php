@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="css/background.css">
     <script src="js/script.js"></script>
     <title>☕ Prenez une pause café</title>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@TheBidouilleur" />
+    <meta name="twitter:creator" content="@TheBidouilleur" />
+    <meta property="og:url" content="https://une-pause-cafe.fr/" />
+    <meta property="og:title" content="Prenez une pause café" />
+    <meta property="og:description" content="Prenez une pause café avec un article technique de la catégorie de votre choix." />
+    <meta property="og:image" content="https://i.imgur.com/7rVJuZp.png" />
 </head>
 
 <body>
