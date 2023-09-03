@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/sanitize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/firework.css">
     <link rel="stylesheet" href="css/background.css">
-    <script src="js/script.js"></script>
     <title>☕ Prenez une pause café</title>
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@TheBidouilleur" />
     <meta name="twitter:creator" content="@TheBidouilleur" />
     <meta property="og:url" content="https://une-pause-cafe.fr/" />
     <meta property="og:title" content="Prenez une pause café" />
-    <meta property="og:description" content="Prenez une pause café avec un article technique de la catégorie de votre choix." />
+    <meta property="og:description"
+        content="Prenez une pause café avec un article technique de la catégorie de votre choix." />
     <meta property="og:image" content="https://i.imgur.com/7rVJuZp.png" />
 </head>
 
@@ -64,6 +63,16 @@
                             $title = (string) $randomItem->title;
                             $url = (string) $randomItem->link;
 
+                            // while the title contains "emploi" or "job" we try again
+                            while (strpos($title, 'emploi') !== false || strpos($title, 'job') !== false) {
+                                error_log("refresh because contain 'emploi' or 'job' : $title $url");
+
+                                $randomItemIndex = rand(0, count($rssData->channel->item) - 1);
+                                $randomItem = $rssData->channel->item[$randomItemIndex];
+
+                                $title = (string) $randomItem->title;
+                                $url = (string) $randomItem->link;
+                            }
                             echo "<p class='lien container'><a href='$url' target='_blank'>$title</a></p>";
                         } else {
                             echo "Error fetching RSS feed.";
