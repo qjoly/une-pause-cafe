@@ -101,8 +101,8 @@
         </div>
     </form>
     <footer>
-        <p>Prenez une pause-café en lisant un article de la catégorie de votre choix !</p>
-        <p style="padding-top: 2px;">Merci au <a href="https://www.journalduhacker.net/">Journal du hacker</a> de mettre à disposition ces liens !</p>
+        <p>Prenez une pause-café en lisant un article de la <a href="https://www.journalduhacker.net/filters">catégorie</a> de votre choix !</p>
+        <p style="padding-top: 2px;"> <a href="https://une-tasse-de.cafe"> ☕ Pour une pause un peu plus longue, vous pouvez toujours visiter mon blog ☕ </a></p>
 
     </footer>
 EOT;
